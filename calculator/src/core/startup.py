@@ -8,7 +8,7 @@ class StartUp:
     def __init__(self):
         super(StartUp, self)
     
-    def start_app(self):
+    def start_up(self):
 
         from commons.Services.observer_services_handler.observer_services_handler import ObserverServicesHandler
         
