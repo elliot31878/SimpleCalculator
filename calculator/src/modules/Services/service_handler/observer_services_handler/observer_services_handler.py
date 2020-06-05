@@ -57,20 +57,20 @@ class ObserverServicesHandler:
         # +
         if self.param == "+":
 
-            from modules.plus_service import PlusService
+            from modules.Services.plus_service import PlusService
             return self.param, "modules.PlusService", PlusService, self.number_1, self.number_2
         # -
         elif self.param == "-":
 
-            from modules.minus_service import MinusService
+            from modules.Services.minus_service import MinusService
             return self.param, "modules.MinusService", MinusService, self.number_1, self.number_2
         # *
         elif self.param == "*":
 
-            from modules.multiplication_service import MultiService
+            from modules.Services.multiplication_service import MultiService
             return self.param, "modules.MultiService", MultiService, self.number_1, self.number_2
         # /
         elif self.param == "/":
 
-            from modules.div_service import DivisinService
+            from modules.Services.div_service import DivisinService
             return self.param, "modules.DivisionService", DivisinService, self.number_1, self.number_2
