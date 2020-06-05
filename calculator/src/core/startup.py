@@ -10,10 +10,10 @@ class StartUp:
     
     def start_up(self):
 
-        from commons.Services.observer_services_handler.observer_services_handler import ObserverServicesHandler
+        from modules.Services.observer_services_handler.observer_services_handler import ObserverServicesHandler
         
         param, service_path, package, number1, number2 = ObserverServicesHandler().observer_handler()
 
-        from commons.Services.setting_up_concentrate.setting_up_concentrate import SettingUpConcentrate
+        from modules.Services.setting_up_concentrate.setting_up_concentrate import SettingUpConcentrate
 
         SettingUpConcentrate(param, service_path, package, number1, number2 ).setting_up()
