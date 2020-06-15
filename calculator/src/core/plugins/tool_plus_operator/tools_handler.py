@@ -4,14 +4,20 @@ this class for plus between two number
 """
 
 
-class ToolHandler:
-    
-    def __init__(self, number_1:int, number_2:int):
-        super(ToolHandler, self)
-        self.number_1: int =  number_1
-        self.number_2: int =  number_2
+from .interfaces.observer import Observer
 
-    def execute_app(self):
-        print("In Plus Tools")
-        print(self.number_1 + self.number_2)
-        return  self.number_1 + self.number_2
+
+class ToolHandler(Observer):
+    
+    def __init__(self):
+        super(ToolHandler, self)
+
+    @property
+    def class_name(self):
+        return "+"
+
+    def execute_app(self, message: dict):
+        number_1: int = message["number1"]
+        number_2: int = message["number2"]
+
+        return number_1 + number_2

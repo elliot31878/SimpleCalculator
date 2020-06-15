@@ -4,6 +4,7 @@
 """
 
 import os
+from typing import List
 
 
 class DirManager:
@@ -28,6 +29,8 @@ class DirManager:
             :param level: depth of crawling
             :return: list of directories
         """
+        list_dirs: List = list()
+
         main_dir = path.rstrip(os.path.sep)
         assert os.path.isdir(main_dir)
 

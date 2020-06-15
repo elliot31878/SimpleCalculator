@@ -18,7 +18,7 @@ class ConcentrateHandler(Subject):
     def notification(self, message: dict, to: str):
         for item in self._observers:
             if item.class_name == to:
-                item.notify(message)
+                return item.execute_app(message)
 
     def inject(self, observer: Observer):
         for item in self._observers:
