@@ -1,3 +1,10 @@
+# Installation
+
+```bash
+first=>git clone https://github.com/MrXDv/SimpleCalculator.git
+secound=>pip install -r requirements.txt
+```
+
 # Calculator
 This is a simple example for desigen pattern observer & microkernel architecture in this project You see how it works.
 
