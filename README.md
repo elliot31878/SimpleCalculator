@@ -9,6 +9,8 @@ They're an efficient way to achieve application customization and can offer soft
 Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen
 to the object they're observing.
 # Visio
-![observer-microkernel ](https://user-images.githubusercontent.com/63051195/127719658-8d54df58-8c38-4d4d-9620-ca877bab3193.png)
+
+![observer-microkernel@2x](https://user-images.githubusercontent.com/63051195/127719808-f3c39d39-4409-475c-9020-bc831f7d74d6.png)
+
 
 # GodBye ;)
